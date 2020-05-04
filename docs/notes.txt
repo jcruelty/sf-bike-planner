@@ -1,0 +1,15 @@
+14151 records
+4620854 points
+takes a minute or two to read in all points and generate list
+takes a minute or two to write out pkl file
+takes a few seconds to sort
+
+157118464 bytes to store in protocol 1
+
+
+Opened C:\Documents and Settings\Amar\My Documents\sf-bike-planner\data\GISData\SFGOV_wgs84\phys_contours_wgs.shp
+14151 records to process...  0  283  566  849  1132  1415  1698  1981  2264  2547  2830  3113  3396  3679  3962  4245  4528  4811  5094  5377  5660  5943  6226  6509  6792  7075  7358  7641  7924  8207  8490  8773  9056  9339  9622  9905  10188  10471  10754  11037  11320  11603  11886  12169  12452  12735  13018  13301  13584  13867  14150  done.
+Output list contains 4620854 points each
+Sorting...  Done
+>>> 
+

@@ -1,0 +1,84 @@
+body {
+	-webkit-text-size-adjust:none;
+	margin: 3px;
+	margin-left: 8px;
+	padding: 3px;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;	
+}
+
+#inputform {
+	float: left;
+}
+
+form label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 150px; 
+	margin-left: 0px;
+	margin-bottom: 3px;
+}
+
+form input {
+	padding-left: 0px;
+	margin-bottom: 3px;
+}
+
+form fieldset {
+  clear: both;
+	padding-left: 0px;
+	margin-left: 0px;
+	border: none;
+}
+
+form br {
+	clear:left;
+}
+
+#routePref {
+  font-size: 12px;
+  margin-top: 3px;
+  padding-left: 0px;
+	margin-bottom: 3px;
+}
+
+#submitButton {
+  /*font-style: italic;*/
+	margin-top: 6px;
+  margin-left: -2px;
+	font-size: 12px;
+}
+
+#submitButton.mobile {
+ margin-top: 15px;
+ margin-left: -2px;
+ margin-bottom: 10px;
+}
+
+#formFooter {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  margin-left: 1px;
+}
+
+#statustxt {
+  margin-left: 3px;
+  margin-top: 5px;
+}
+
+#statustxt.mobile {
+  clear: both;
+}
+
+#gmap {
+  display: none;
+}
+
+#directions {
+  display: none;
+  clear: both;
+}

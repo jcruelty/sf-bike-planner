@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SF bike route planner - FAQ</title>
+<style type="text/css">
+dt {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+dd {
+	margin-bottom: 25px;
+	margin-top: 5px;
+	margin-left: 17px;
+}
+table {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+td.roadtype {
+	color: blue;
+	font-weight: bold;
+	border-color: black;
+	width: 20%;
+}
+
+</style>
+</head>
+<body>
+<h1 style="font-style: italic; text-align: center">
+	SF bike route planner - FAQ
+</h1>
+<dl>
+	<dt>
+		1. How did you make this?
+	</dt>
+	<dd>
+		My original notes are publicly accessible <a href="http://docs.google.com/View?id=dhg5k4pt_69r88n8kc6">here</a>. If you find them useful, please credit me &amp; link back to <a href="http://amarpai.com/bikemap/bikemap.html">http://amarpai.com/bikemap</a>.<p> For more recent features (geolocation, jQuery, elevation fixes, etc.) your best bet is to examine the <a href="http://code.google.com/p/sf-bike-planner/source/list">svn logs</a> directly.  Also, feel free to join the <a href="http://groups.google.com/group/sf-bike-planner">mailing list</a> and ask questions there.
+	</dd>
+	<dt>
+		2. What does bike-friendly mean?
+	</dt>
+	<dd>
+		There are several categories of road in San Francisco. From a bicyclist's point of view, here they are from least friendly to most friendly:<br>
+		<table border="5px" cellpadding="8px" cellspacing="2px">
+			<tr>
+				<td class="roadtype">
+					road
+				</td>
+				<td>
+					an ordinary street - no special allowances for bikes-- may have high traffic
+				</td>
+			</tr>
+			<tr>
+				<td class="roadtype">
+					bike route
+				</td>
+				<td>
+					an unstriped, signed roadway shared by bicycles and motorized vehicles. (e.g. any street that has that bike thingy painted on it, like you see along the wiggle)
+				</td>
+			</tr>
+			<tr>
+				<td class="roadtype">
+					wide curb lane
+				</td>
+				<td>
+					a bike route's right-hand traffic lane that is wide enough to accommodate bicycles and motorized vehicles side by side in the same lane. (e.g. 17th st from mission to noe)
+				</td>
+			</tr>
+			<tr>
+				<td class="roadtype">
+					bike lane
+				</td>
+				<td>
+					a part of the roadway which is striped and signed for bicycles only (e.g. valencia)
+				</td>
+			</tr>
+			<tr>
+				<td class="roadtype">
+					bike path
+				</td>
+				<td>
+					an off-road paved trail for bicycles.
+				</td>
+			</tr>
+		</table>A bike friendly route is one which maximizes time spent on the better categories of road, e.g. bike lanes are preferred to wide curb lanes and wide curb lanes are preferred to plain roads. Note that staying on just bike-friendly roads means you can't always go the most direct way to your destination; hence bike friendly routes tend to be longer than the shortest path route.
+	</dd>
+	<dt>
+		3. What is "steepest climb" ? What units are hills measured in?
+	</dt>
+	<dd>
+		This parameter is the maximum <a href="http://www.roberts-1.com/bikehudson/r/m/hilliness/index.htm#grade">grade</a> (rise / run, in feet) that you're willing to tolerate. 0.25 is ungodly steep, 0.15 is really steep, .05 is decent incline, 0 is flat. I should really convert it to % -- people would probably understand 25% better than .25.
+	</dd>
+	<dt>
+		4. Can I get involved in this project?
+	</dt>
+	<dd>
+		Ok, I admit this isn't frequently asked. But the answer is yes! Check out the open issues linked from the bike map page, and if you're interested please join the mailing list. There's all kinds of tasks/projects to take on from small to large. Examples include: mash up w/ accident data to show dangerous intersections, figure out how to get the city's latest bike lane improvements exported into shapefiles that we can use to rebuild the bike graph, reimport the existing bike graph using professional GIS software &amp; 'fix up' the edges as per bug reports... the list goes on.
+		<p>
+			If you're not technically inclined, but you know how to write a grant application, it would be great to get an ESRI grant for ArcView/etc. If you have political acumen, maybe you can convince the city to publish updated shapefiles for all the new bike lane improvements being made as a result of the SF Bike Plan getting approved. See mailing list for some discussion of these topics.
+		</p>
+	</dd>
+</dl>
+<p>
+	If you have a question not answered in this FAQ, please email me at <a href="mailto:jcruelty1@yahoo.com?subject=bikemap">jcruelty1@yahoo.com</a> (or, better yet, join the <a href="http://groups.google.com/group/sf-bike-planner">mailing list</a>). Bug reports, comments &amp; suggestions are appreciated.<p>
+		
+<i>last updated 7/23/09 1:50PM</i> 
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try{
+var pageTracker = _gat._getTracker("UA-4815282-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
